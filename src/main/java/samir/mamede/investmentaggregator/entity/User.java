@@ -30,6 +30,9 @@ public class User {
     @UpdateTimestamp
     private Instant updatedTimestamp;
 
+    @Version
+    private Integer version;
+
     public User() {
     }
 
@@ -88,5 +91,13 @@ public class User {
 
     public void setUpdatedTimestamp(Instant updatedTimestamp) {
         this.updatedTimestamp = updatedTimestamp;
+    }
+
+    public Integer getVersion() {
+        return version;
+    }
+
+    public void setVersion(Integer version) {
+        this.version = version;
     }
 }
